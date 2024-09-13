@@ -36,19 +36,17 @@ const Header = () => {
   return (
     <div className="flex w-screen items-center px-8">
       <div className="">
-        <Image src="/logo2.png" alt="Hazim Bakar" width={50} height={50} />
+        <Image src="/logo2.png" alt="Hazim Bakar" width={70} height={70} />
       </div>
       <div className="flex flex-1 justify-center gap-10 py-8">
-        <div>About</div>
-        <div>Portfolio</div>
-        <div>Contact</div>
+        <div className="cursor-pointer hover:text-blue-600 ">About</div>
+        <div className="cursor-pointer hover:text-blue-600 ">Portfolio</div>
+        <div className="cursor-pointer hover:text-blue-600 ">Contact</div>
       </div>
       <div className="">
-        <Dropdown menu={{ items }}><UserOutlined style={{ fontSize: '20px' }} /></Dropdown>
+        <Dropdown menu={{ items }}><UserOutlined className="hover:text-blue-600" style={{ fontSize: '35px' }} /></Dropdown>
       </div>
     </div>
-
-
   )
 }
 export default Header
