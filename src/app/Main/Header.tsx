@@ -1,6 +1,6 @@
 import { UserOutlined } from "@ant-design/icons"
 import Image from "next/image"
-import { Button, Dropdown, Space } from 'antd';
+import { Button, Divider, Dropdown, Space } from 'antd';
 import type { MenuProps } from 'antd';
 
 
@@ -34,19 +34,24 @@ const Header = () => {
   ]
 
   return (
-    <div className="flex w-screen items-center px-8">
+    <>
+      <div className="flex w-screen items-center px-8">
+        <div className="">
+          <Image src="/logo2.png" alt="Hazim Bakar" width={70} height={70} />
+        </div>
+        <div className="flex flex-1 justify-center gap-10 py-8">
+          <div className="cursor-pointer hover:text-blue-600 ">About</div>
+          <div className="cursor-pointer hover:text-blue-600 ">Portfolio</div>
+          <div className="cursor-pointer hover:text-blue-600 ">Contact</div>
+        </div>
+        <div className="">
+          <Dropdown menu={{ items }}><UserOutlined className="hover:text-blue-600" style={{ fontSize: '35px' }} /></Dropdown>
+        </div>
+
+      </div>
       <div className="">
-        <Image src="/logo2.png" alt="Hazim Bakar" width={70} height={70} />
-      </div>
-      <div className="flex flex-1 justify-center gap-10 py-8">
-        <div className="cursor-pointer hover:text-blue-600 ">About</div>
-        <div className="cursor-pointer hover:text-blue-600 ">Portfolio</div>
-        <div className="cursor-pointer hover:text-blue-600 ">Contact</div>
-      </div>
-      <div className="">
-        <Dropdown menu={{ items }}><UserOutlined className="hover:text-blue-600" style={{ fontSize: '35px' }} /></Dropdown>
-      </div>
-    </div>
+        <Divider className="border-red-500 w-[1200px]" />
+      </div></>
   )
 }
 export default Header
