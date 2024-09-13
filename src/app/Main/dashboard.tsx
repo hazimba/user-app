@@ -13,9 +13,7 @@ const Dashboard = () => {
   return (
     <>
       <Header />
-      <div className="flex justify-center">
-        <Divider className="border-red-500 w-[1200px]" />
-      </div>
+
       <Introduction />
       <About />
       <Skills />
