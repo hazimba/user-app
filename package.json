@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.4.0",
     "@next/env": "^14.2.8",
     "@supabase/supabase-js": "^2.45.3",
     "antd": "^5.20.5",
