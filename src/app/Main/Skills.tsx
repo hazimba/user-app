@@ -17,7 +17,7 @@ const Skills = () => {
   }
 
   return (
-    <div className="my-12 py-12 flex justify-between items-center flex-col w-screen gap-y-4 w-screen bg-black">
+    <div className="my-12 py-12 flex justify-between items-center flex-col w-screen gap-y-4 bg-black">
       <div className="text-2xl">SKILL</div>
       <div>{skillCard()}</div>
     </div>

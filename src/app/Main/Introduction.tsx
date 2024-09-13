@@ -20,10 +20,9 @@ const Introduction = () => {
 
 
   return (
-    <div className="flex w-screen justify-evenly h-[450px] items-center font-sans">
+    <div className="flex w-screen h-[700px] justify-evenly items-center font-sans">
       <div className="flex flex-col gap-5">
-        <div className="text-2xl flex items-end justify-center">IM <span className="text-5xl pl-2 pr-4">HAZIM BAKAR</span></div>
-
+        <div className="text-2xl flex items-end justify-center">IM <span className="text-5xl pl-2 pr-4 text-yellow-400	">HAZIM BAKAR</span></div>
         <div>
           <div>JAVASCRIPT REACT JS</div>
           <div>DEVELOPER</div>
@@ -34,7 +33,7 @@ const Introduction = () => {
         </div>
       </div>
       <div className="">
-        <Image className="rounded-full" width={350} height={2000} src="/hazim2.png" alt="" />
+        <Image className="rounded-full" width={350} height={2000} src="/hazimbakar.jpg" alt="" />
       </div>
     </div>
   )
