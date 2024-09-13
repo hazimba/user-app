@@ -1,41 +1,35 @@
+"use client"
 import { Button } from "antd"
-
+import styled from "styled-components";
 import Image from "next/image"
+
+const ImageStack = styled.div`
+  width: 800px;
+  height: 800px;
+  background-image: url("/hazimbakar-circle.jpg"), url("/abs4.png");
+  background-position: center center, center center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 300px, 600px;
+  position: relative;
+`;
 
 const Introduction = () => {
 
-  const random = () => {
-    const name = ['H', 'A', 'Z', 'I', 'M', 'B', 'A', 'K', 'A', 'R'];
-
-    return name.map((n, index) => {
-      const randomPadding = Math.floor(Math.random() * 20);
-      return (
-        <span key={index} style={{ paddingLeft: `${randomPadding}px`, paddingBottom: `${randomPadding}px` }}>
-          {n}
-        </span>
-      );
-    });
-  };
-
-
-
   return (
-    <div className="flex w-screen h-[700px] justify-evenly items-center font-sans">
-      <div className="flex flex-col gap-5">
-        <div className="text-2xl flex items-end justify-center">IM <span className="text-5xl pl-2 pr-4 text-yellow-400	">HAZIM BAKAR</span></div>
+    <div className="flex w-screen h-[800px] justify-center items-center font-sans">
+      <div className="flex ml-48 flex-col gap-5">
+        <div className="text-2xl flex items-end justify-center">IM <span className="text-5xl pl-2 pr-4 text-yellow-400">HAZIM BAKAR</span></div>
         <div>
           <div>JAVASCRIPT REACT JS</div>
           <div>DEVELOPER</div>
         </div>
 
         <div className="pt-20">
-          <Button type="primary">Contact</Button>
+          <Button className="text-yellow-400 bg-inherit border-yellow-200 border-2 px-6 py-4">Contact ME!</Button>
         </div>
       </div>
-      <div className="">
-        <Image className="rounded-full" width={350} height={2000} src="/hazimbakar.jpg" alt="" />
-      </div>
+      <ImageStack />
     </div>
-  )
+  );
 }
 export default Introduction
