@@ -16,9 +16,9 @@
 }
 
 body {
-  background-color: #15292B;
+  background-color: #15292b;
   color:antiquewhite;
-  font-family: 'Ubuntu', sans-serif; /* Apply Ubuntu font to the body */
+  font-family: 'Ubuntu', sans-serif;
 }
 
 @layer utilities {
