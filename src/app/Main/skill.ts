@@ -100,3 +100,30 @@ export const sideProject = [
         image: ''
     }
 ]
+
+export const experience = [
+    {
+        children: 'Swift Haulage Berhad',
+        position: 'Full Stack Developer',
+        date: 'Nov 2023 - Present',
+        info: 'Develop new feature, bug fixes, focus more on functionality rather than UI'
+    },
+    {
+        children: 'HOMA SDN BHD',
+        position: 'Frontend Developer',
+        date: 'Jun 2023 - Nov 2023',
+        info: 'Develop the UI from scratch, mostly focus on frontend'
+    },
+    {
+        children: 'ThunderQuote',
+        position: 'Intern',
+        date: 'Mar 2023 - Jun 2023',
+        info: 'Develop new feature, bug fixes, focus more on functionality rather than UI'
+    },
+    {
+        children: 'Sigma School',
+        position: 'Student',
+        date: 'Sep 2022 - Mar 2023',
+        info: 'Learn basic of programming'
+    }
+]
