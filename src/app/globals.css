@@ -18,7 +18,7 @@
 body {
   background-color: #15292b;
   color:antiquewhite;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif !important
 }
 
 @layer utilities {
