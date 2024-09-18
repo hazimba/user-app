@@ -1,39 +1,61 @@
+import React from 'react';
+import { JavaScriptOutlined } from '@ant-design/icons';
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
+import { AiOutlineAntDesign } from "react-icons/ai";
+import { FaFigma } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import { GrMysql } from "react-icons/gr";
+
+
 export const skills = [
     {
         name: 'Javascript',
-        logo: ''
+        logo: React.createElement(IoLogoJavascript),
+        experience: '2 year'
     },
     {
         name: 'React JS',
-        logo: ''
+        logo: React.createElement(FaReact),
+        experience: '1 year'
     },
     {
         name: 'Tailwind CSS',
-        logo: ''
+        logo: React.createElement(RiTailwindCssFill),
+        experience: '1 year'
     },
     {
         name: 'TypeScript',
-        logo: ''
+        logo: React.createElement(BiLogoTypescript),
+        experience: '1 year'
     },
     {
         name: 'Antd',
-        logo: ''
+        logo: React.createElement(AiOutlineAntDesign),
+        experience: '1 year'
     },
     {
         name: 'Figma',
-        logo: ''
+        logo: React.createElement(FaFigma),
+        experience: '1 year'
     },
     {
         name: 'MongoDB',
-        logo: ''
+        logo: React.createElement(SiMongodb),
+        experience: '1/2 year'
     },
     {
         name: 'Git Source Control',
-        logo: ''
+        logo: React.createElement(FaGithub),
+        experience: '2 year'
     },
     {
         name: 'MySQL',
-        logo: ''
+        logo: React.createElement(GrMysql),
+        experience: '1/2 year'
     }
 ]
 
