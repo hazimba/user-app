@@ -5,6 +5,7 @@ import About from "./About";
 import { skills } from "./skill";
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
+import Gallery from "./Gallery";
 
 const Dashboard = () => {
   console.log('Supabase URL from env: 123', process.env.SUPABASE_URL);
@@ -18,6 +19,7 @@ const Dashboard = () => {
       <About />
       <Skills />
       <Portfolio />
+      <Gallery />
     </>
   )
 }
