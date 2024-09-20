@@ -52,14 +52,13 @@ const About = () => {
 
         return () => {
             if (container) {
-                console.log()
                 container.removeEventListener('scroll', logScrollY);
             }
         };
     }, []);
 
     return (
-        <div className="grid grid-cols-12 w-screen h-[500px] gap-20 gap-y-4" >
+        <div className="grid grid-cols-12  h-[500px] gap-20 gap-y-4" >
             <div className="col-span-1"></div>
             <div className="col-span-3">
                 <div className="text-2xl">ABOUT</div>

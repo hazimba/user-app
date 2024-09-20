@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex w-screen items-center px-8">
+      <div className="flex  items-center px-8">
         <div className="">
           <Image src="/logo2.png" alt="Hazim Bakar" width={70} height={70} />
         </div>
