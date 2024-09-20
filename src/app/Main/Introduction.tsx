@@ -41,7 +41,7 @@ const ImageStack = styled.div`
 const Introduction = () => {
 
   return (
-    <div className="flex w-screen h-screen justify-center items-center font-sans">
+    <div className="flex  h-screen justify-center items-center font-sans">
       <div className="flex ml-48 justify-between h-[350px] flex-col gap-5">
         <div>
           <div className="text-2xl flex items-end justify-center">IM <span className="text-5xl pl-2 pr-4 text-yellow-400">HAZIM BAKAR</span></div>

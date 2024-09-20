@@ -10,11 +10,11 @@ const Gallery = () => {
   return <>
     <div className="flex flex-col items-center justify-center my-20 gap-20">
       <div className='flex flex-col gap-20'>
-        <div className='flex w-screen justify-center items-center flex-col'>
+        <div className='flex  justify-center items-center flex-col'>
           <div className="font-semibold text-center text-2xl md:text-3xl pb-2">gallery <span className='text-primary'>random</span></div>
           <hr className="border border-primary flex justify-center items-center align-middle w-[120px]" />
         </div>
-        <div className='w-screen justify-center flex flex-row gap-2'>
+        <div className=' justify-center flex flex-row gap-2'>
           <div className=' flex justify-center'>
             <Image src={"/greenhouse-1.png"} className="" alt="homa logo" height={0} width={800}></Image>
           </div>

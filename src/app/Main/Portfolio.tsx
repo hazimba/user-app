@@ -43,7 +43,7 @@ const Portfolio = () => {
     }
 
     return (
-        <div className="py-12 flex justify-between items-center flex-col w-screen gap-y-4">
+        <div className="py-12 flex justify-between items-center flex-col  gap-y-4">
             <div className="text-2xl">PORTFOLIO</div>
             <div className="flex gap-12">
                 <div className="">
