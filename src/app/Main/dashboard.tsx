@@ -4,6 +4,7 @@ import About from "./About";
 import Skills from "./Skills";
 import Portfolio from "./Portfolio";
 import Gallery from "./Gallery";
+import Footer from "./Footer";
 
 const Dashboard = () => {
 
@@ -15,6 +16,7 @@ const Dashboard = () => {
     <Skills />
     <Portfolio />
     <Gallery />
+    <Footer />
   </div>
 
 }
