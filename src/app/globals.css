@@ -26,3 +26,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.ant-form-item-label > label {
+  color: white !important;
+  font-weight: 500 !important;
+}
