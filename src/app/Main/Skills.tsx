@@ -24,7 +24,9 @@ const Skills = () => {
 
   return (
     <div className="my-12 py-12 flex justify-center h-screen items-center flex-col  gap-y-4 bg-[#181818]">
-      <div className="text-2xl mb-12">SKILL</div>
+      <div className='flex justify-center items-center flex-col'>
+        <div className="font-semibold text-center text-2xl md:text-3xl pb-2">Skill</div>
+      </div>
       <div>{skillCard()}</div>
     </div>
   )
