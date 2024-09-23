@@ -29,18 +29,17 @@ const ReachMe = () => {
       </div>
       <Form
         name="contact"
-        labelCol={{ span: 7, style: { color: 'white' } }}
-        wrapperCol={{ span: 16 }}
-        style={{ maxWidth: 600 }}
+        labelCol={{ span: 6 }}
+        style={{ width: '100%', display: 'flex', justifyContent: 'center', maxWidth: 600 }}
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
       >
-        <div className='flex w-screen'>
+        <div className='flex w-screen justify-center gap-4'>
           <div>
             <Form.Item
               label="Name"
               name="name"
-              style={{ width: 300 }}
+              style={{ width: 350 }}
               rules={[{ required: false, message: 'Please enter your name!' }]}
             >
               <Input />
@@ -66,20 +65,19 @@ const ReachMe = () => {
             <Form.Item
               label="Text"
               name="text"
-              style={{ width: 300 }}
+              style={{ width: 350 }}
               rules={[{ required: false, message: 'Please enter your phone number!' }]}
             >
               <Input.TextArea showCount style={{ height: '150px' }} maxLength={100} />
             </Form.Item>
           </div>
         </div>
-
-        <div className='flex justify-center pt-12'>
-          <Button type="primary" htmlType="submit">
-            Submit
-          </Button>
-        </div>
       </Form>
+      <div className='flex justify-center'>
+        <Button type="primary" htmlType="submit">
+          Submit
+        </Button>
+      </div>
     </div>
   )
 }
