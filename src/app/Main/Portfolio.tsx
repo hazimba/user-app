@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { portfolio, sideProject } from "./skill"
-import Image from "next/image"
+import Image from "next/legacy/image"
 
 
 
