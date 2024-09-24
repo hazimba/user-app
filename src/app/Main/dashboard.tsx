@@ -11,7 +11,6 @@ const Dashboard = () => {
 
   return <div className="w-[100%]">
     <Header />
-
     <Introduction />
     <About />
     <Skills />

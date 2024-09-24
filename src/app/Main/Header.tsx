@@ -1,57 +1,62 @@
-import { UserOutlined } from "@ant-design/icons"
+"use client"
+import { DownOutlined, UpOutlined, UserOutlined } from "@ant-design/icons"
 import Image from "next/legacy/image"
-import { Button, Divider, Dropdown, Space } from 'antd';
-import type { MenuProps } from 'antd';
+import { Button, Collapse, Divider, Dropdown, Space } from 'antd';
+import type { CollapseProps, MenuProps } from 'antd';
+import { useState } from "react";
+import HeaderItems from "@/app/Main/HeaderItems";
 
 
 const Header = () => {
 
-  const items: MenuProps['items'] = [
+  const [isOpen, setIsOpen] = useState<boolean>(true);
+
+
+  const backgroundImage: React.CSSProperties = {
+    backgroundSize: 'cover',
+    backgroundImage: "url('/images/shop-landing/Shop_Images.jpg')",
+    transition: 'height 0.2s ease'
+  }
+
+  const items: CollapseProps["items"] = [
     {
-      key: '1',
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/hazimba">
-          GitHub Profile
-        </a>
+      key: "1",
+      className: '!flex !flex-col-reverse',
+      headerClass:
+        "!border-none !rounded-none !flex items-center justify-center",
+      style: backgroundImage,
+      label: "",
+      children: (
+        <HeaderItems />
       ),
     },
-    {
-      key: '2',
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hazimba/">
-          LinkendIn
-        </a>
-      ),
-    },
-    {
-      key: '3',
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/hazimba/">
-          Instagram
-        </a>
-      ),
+  ];
+
+  const scrollTop = () => {
+    const element = document.getElementById("smart-filter");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (element) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
-  ]
+  };
+
+  const customExpandIcon = (panelProps: any) => {
+    setIsOpen(panelProps.isActive);
+    return (
+      <div onClick={scrollTop} className="w-screen !p-0 !flex !items-center !justify-center">
+        {panelProps.isActive ? <UpOutlined style={{ color: 'white' }} /> : <DownOutlined style={{ color: 'white' }} />}
+      </div>
+    );
+  };
 
   return (
-    <>
-      <div className="flex  items-center px-8">
-        <div className="">
-          <Image src="/logo2.png" alt="Hazim Bakar" width={70} height={70} />
-        </div>
-        <div className="flex flex-1 justify-center gap-10 py-8">
-          <div className="cursor-pointer hover:text-blue-600 ">About</div>
-          <div className="cursor-pointer hover:text-blue-600 ">Portfolio</div>
-          <div className="cursor-pointer hover:text-blue-600 ">Contact</div>
-        </div>
-        <div className="">
-          <Dropdown menu={{ items }}><UserOutlined className="hover:text-blue-600" style={{ fontSize: '35px' }} /></Dropdown>
-        </div>
-
-      </div>
-      <div className="">
-        <Divider className="border-red-500 w-[1200px]" />
-      </div></>
+    <Collapse
+      items={items}
+      defaultActiveKey={[1]}
+      className={`collapse-no-padding !rounded-none md:sticky ${isOpen ? '' : 'md:top-[0] md:!z-[900]'}`}
+      ghost
+      expandIcon={customExpandIcon}
+    />
   )
 }
 export default Header
