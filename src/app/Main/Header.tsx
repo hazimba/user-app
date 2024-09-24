@@ -1,5 +1,5 @@
 import { UserOutlined } from "@ant-design/icons"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { Button, Divider, Dropdown, Space } from 'antd';
 import type { MenuProps } from 'antd';
 

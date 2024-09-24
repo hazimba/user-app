@@ -1,7 +1,7 @@
 "use client"
 import { Button } from "antd"
 import styled from "styled-components";
-import Image from "next/image"
+import Image from "next/legacy/image"
 
 const ImageStack = styled.div`
   width: 800px;

@@ -1,5 +1,5 @@
 "use client"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { useEffect, useRef, useState } from "react";
 
 
@@ -83,7 +83,7 @@ const About = () => {
                                     <h2 className="md:text-4xl md:pb-8 text-2xl">{i.title}</h2>
                                     <div className="md:text-lg text-lg text-justify">{i.context}</div>
                                 </div>
-                                <Image src={`/storyimage-${index}.jpg`} className="flex" alt="" style={{ objectFit: "cover", height: '400px' }} width={520} height={0} />
+                                <Image src={`/storyimage-${index}.jpg`} className="flex" alt="" style={{}} width={520} height={10} />
                             </div>
                         ))}
                     </div>
